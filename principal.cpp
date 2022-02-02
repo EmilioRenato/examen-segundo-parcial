@@ -125,7 +125,7 @@ QString principal::allData2string()
 {
     QString str = "";
     str.append("Fecha: [" + QString::number(m_dia)+"/" + QString::number(m_mes)+"/"
-    + QString::number(m_anio)+"] Peso:"+m_peso+" Altura"+ m_altura+ "\n");
+    + QString::number(m_anio)+"] Peso:"+m_peso+"Kg Altura"+ m_altura+ "m"+ "\n");
     return str;
 }
 
@@ -160,8 +160,11 @@ void principal::on_actionAbrir_ctr_a_triggered()
     if(archivo.open(QFile::ReadOnly)){
         QTextStream entrada(&archivo);
         QString datos = entrada.readAll();
+        QString dato1= entrada.readLine(12);
         ui->outTexto->clear();
+
         ui->outTexto->setPlainText(datos);
+        ui->outPesoMax->setText(dato1);
         ui->statusbar->showMessage("Datos leidos desde " + nombreArchivo, 500);
     }else {
         QMessageBox::warning(this,
