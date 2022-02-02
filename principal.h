@@ -6,6 +6,8 @@
 #include <QMainWindow>
 #include <QFileDialog>
 #include <QPainter>
+#include <QFile>
+#include <QDebug>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class principal; }
@@ -27,13 +29,29 @@ private slots:
 
     void on_actionCalcular_triggered();
 
+    void on_actionAbrir_ctr_a_triggered();
+
+    void on_actionNuevo_triggered();
+
+    void on_actionSalir_triggered();
+
 private:
     Ui::principal *ui;
     void Calcular();
     QString m_altura;
     QString m_peso;
+    int m_dia;
+    int m_mes;
+    int m_anio;
     QPixmap lienzo;
     void dibujar();
+    void limpiar();
+    void guarar();
+    QString allData2string();
+    QString m_altura_max;
+    QString m_peso_max;
+
+
 
 };
 #endif // PRINCIPAL_H

@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/"/>
+    <qresource prefix="/new/prefix1">
+        <file>recursos/escala-de-peso.png</file>
+        <file>recursos/calculadora.png</file>
+        <file>recursos/carpeta.png</file>
+        <file>recursos/guardar-el-archivo.png</file>
+        <file>recursos/salida.png</file>
+        <file>recursos/agregar-archivo.png</file>
+    </qresource>
+</RCC>

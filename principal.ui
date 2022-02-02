@@ -6,186 +6,38 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1008</width>
+    <height>680</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>principal</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="recursos.qrc">
+    <normaloff>:/new/prefix1/recursos/escala-de-peso.png</normaloff>:/new/prefix1/recursos/escala-de-peso.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(66, 239, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QWidget" name="widget" native="true">
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(212, 251, 255);</string>
-      </property>
-      <widget class="QLabel" name="label_2">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>10</y>
-         <width>311</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>registro de datos</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btnCalcular">
-       <property name="geometry">
-        <rect>
-         <x>290</x>
-         <y>500</y>
-         <width>80</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>calcular</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="outTabla">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>210</y>
-         <width>341</width>
-         <height>191</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_8">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>350</y>
-         <width>341</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(90, 255, 167);</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QWidget" name="">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>70</y>
-         <width>241</width>
-         <height>88</height>
-        </rect>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout">
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout">
-            <item>
-             <widget class="QLabel" name="label">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgb(175, 255, 204);</string>
-              </property>
-              <property name="text">
-               <string>Ingrese la fecha</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QDateEdit" name="inFecha">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgb(175, 255, 204);</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_2">
-            <item>
-             <widget class="QLabel" name="label_3">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgb(175, 255, 204);</string>
-              </property>
-              <property name="text">
-               <string>ingrese su altura </string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="inMetros">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgb(175, 255, 204);</string>
-              </property>
-              <property name="placeholderText">
-               <string>altura en metros</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_3">
-          <item>
-           <widget class="QLabel" name="label_4">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(175, 255, 204);</string>
-            </property>
-            <property name="text">
-             <string>ingrese su peso</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="inPeso">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(175, 255, 204);</string>
-            </property>
-            <property name="placeholderText">
-             <string>peso en kg</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-    </item>
     <item row="0" column="1">
      <widget class="QWidget" name="widget_2" native="true">
       <property name="styleSheet">
        <string notr="true">background-color: rgb(212, 251, 255);</string>
       </property>
-      <widget class="QPlainTextEdit" name="plainTextEdit">
+      <widget class="QPlainTextEdit" name="outTexto">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>10</y>
-         <width>371</width>
-         <height>341</height>
+         <x>20</x>
+         <y>20</y>
+         <width>451</width>
+         <height>281</height>
         </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
        </property>
        <property name="placeholderText">
         <string>Aqui se mostra los datos </string>
@@ -194,8 +46,8 @@
       <widget class="QWidget" name="">
        <property name="geometry">
         <rect>
-         <x>160</x>
-         <y>500</y>
+         <x>270</x>
+         <y>580</y>
          <width>207</width>
          <height>24</height>
         </rect>
@@ -225,8 +77,56 @@
       <widget class="QWidget" name="">
        <property name="geometry">
         <rect>
-         <x>110</x>
-         <y>370</y>
+         <x>200</x>
+         <y>310</y>
+         <width>271</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>Peso Actual</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>Altura actual</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLineEdit" name="outActualPeso">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="outActualAltura">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>400</y>
          <width>271</width>
          <height>81</height>
         </rect>
@@ -237,14 +137,14 @@
           <item>
            <widget class="QLabel" name="label_6">
             <property name="text">
-             <string>Altura Maxima</string>
+             <string>Peso Maxima</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLabel" name="label_7">
             <property name="text">
-             <string>Altura Minima</string>
+             <string>Peso Minima</string>
             </property>
            </widget>
           </item>
@@ -253,12 +153,218 @@
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_4">
           <item>
-           <widget class="QLineEdit" name="lineEdit"/>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="lineEdit_2">
+           <widget class="QLineEdit" name="outPesoMax">
             <property name="readOnly">
              <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="outPesoMin">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(212, 251, 255);</string>
+      </property>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>311</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Registro de datos</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="outTabla">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>210</y>
+         <width>451</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>80</y>
+         <width>451</width>
+         <height>92</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(175, 255, 204);</string>
+            </property>
+            <property name="text">
+             <string>Ingrese la fecha                          DD/MM//AA</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QSpinBox" name="inDia">
+                <property name="maximum">
+                 <number>31</number>
+                </property>
+                <property name="value">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="inMes">
+                <property name="maximum">
+                 <number>12</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="inAnio">
+              <property name="maximum">
+               <number>3333</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(175, 255, 204);</string>
+            </property>
+            <property name="text">
+             <string>Ingrese su altura </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="inMetros">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(175, 255, 204);</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>altura en metros</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(175, 255, 204);</string>
+            </property>
+            <property name="text">
+             <string>Ingrese su peso</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="inPeso">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(175, 255, 204);</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>peso en kg</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>512</y>
+         <width>468</width>
+         <height>79</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>48</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>378</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCalcular">
+            <property name="text">
+             <string>calcular</string>
             </property>
            </widget>
           </item>
@@ -275,7 +381,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1008</width>
      <height>20</height>
     </rect>
    </property>
@@ -286,13 +392,17 @@
     <addaction name="actionGuardar"/>
     <addaction name="actionCalcular"/>
     <addaction name="actionAbrir_ctr_a"/>
-    <addaction name="separator"/>
-    <addaction name="actionSalir_esc"/>
+    <addaction name="actionNuevo"/>
+    <addaction name="actionSalir"/>
    </widget>
    <addaction name="menuArchivo"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/new/prefix1/recursos/guardar-el-archivo.png</normaloff>:/new/prefix1/recursos/guardar-el-archivo.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Guardar </string>
    </property>
@@ -301,6 +411,10 @@
    </property>
   </action>
   <action name="actionCalcular">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/new/prefix1/recursos/calculadora.png</normaloff>:/new/prefix1/recursos/calculadora.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Calcular </string>
    </property>
@@ -309,6 +423,10 @@
    </property>
   </action>
   <action name="actionAbrir_ctr_a">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/new/prefix1/recursos/carpeta.png</normaloff>:/new/prefix1/recursos/carpeta.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Abrir </string>
    </property>
@@ -316,15 +434,33 @@
     <string>Ctrl+A</string>
    </property>
   </action>
-  <action name="actionSalir_esc">
+  <action name="actionNuevo">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/new/prefix1/recursos/agregar-archivo.png</normaloff>:/new/prefix1/recursos/agregar-archivo.png</iconset>
+   </property>
    <property name="text">
-    <string>&amp;Salir </string>
+    <string>&amp;Nuevo </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/new/prefix1/recursos/salida.png</normaloff>:/new/prefix1/recursos/salida.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
    </property>
    <property name="shortcut">
     <string>Esc</string>
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>
